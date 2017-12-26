@@ -12,6 +12,9 @@
   },
   "author": "jasonlive",
   "license": "ISC",
+  "bin": {
+    "wci": "./bin/wci"
+  },
   "bugs": {
     "url": "https://github.com/jason-live/wci-cli/issues"
   },
