@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+console.log('hello world');
+
+if (process.argv.slice(2).join('') === '-v') {
+  console.log('dva-cli: ' + require('../package').version);
+  return;
+}
