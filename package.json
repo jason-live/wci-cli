@@ -1,0 +1,19 @@
+{
+  "name": "wci-cli",
+  "version": "0.1.1",
+  "description": "wci-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-live/wci-cli.git"
+  },
+  "author": "jasonlive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jason-live/wci-cli/issues"
+  },
+  "homepage": "https://github.com/jason-live/wci-cli#readme"
+}
