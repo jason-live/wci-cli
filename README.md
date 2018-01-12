@@ -24,7 +24,7 @@ $ wci new myapp --no-install
 ```
 
 #### options
-* --demo -- Generate a dead simple project for quick prototype
+* --pure -- Create an app without antd.
 * --no-install -- Disable npm install after files created
 
 ## Introduction
