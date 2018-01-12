@@ -11,16 +11,16 @@ npm install -g wci-cli
 ```
 
 ## Commands
-##### We have 1 commands: new
-### wci new [options]
-##### Create app with new directory.
-### Usage Examples
+We have 1 commands: new
+#### wci new [options]
+Create app with new directory.
+#### Usage Examples
 ```
 $ wci new myapp
 $ wci new myapp --pure
 $ wci new myapp --no-install
 ```
-### options
+#### options
 * --demo -- Generate a dead simple project for quick prototype
 * --no-install -- Disable npm install after files created
 
