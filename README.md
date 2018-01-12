@@ -25,4 +25,21 @@ $ wci new myapp --no-install
 * --no-install -- Disable npm install after files created
 
 ## Introduction
+#### Generated File Tree
+```
+.
+├── app                    # Source directory 
+    ├── assets             # Store images, icons, ... 
+    ├── scripts            # Store js
+    ├── styles             # Store global less 
+    ├── utils              # Utils 
+    ├── index.js           # Entrance to the file 
+    ├── index.tpl.html     # html template 
+├── build                  # Continuous integration 
+├── .babelrc               # babel config 
+├── .eslintrc              # Eslint config 
+├── .gitignore             # 
+├── package.json           # 
+└── wci.json               # Setting config
+```
 
