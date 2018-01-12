@@ -1,6 +1,6 @@
 {
   "name": "wci-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "wci-cli",
   "main": "index.js",
   "scripts": {
