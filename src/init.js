@@ -19,7 +19,7 @@ function success(message) {
 }
 
 function init({ pure, install }) {
-  const type = pure ? 'pure-app' : 'antd-app';
+  const type = pure ? 'pure' : 'antd';
   const cwd = join(__dirname, '../boilerplates', type);
   const dest = process.cwd();
   const projectName = basename(dest);
@@ -29,7 +29,7 @@ function init({ pure, install }) {
     process.exit(1);
   }
 
-  console.log(`Creating a new Dva app in ${dest}.`);
+  console.log(`Creating a new Wci app in ${dest}.`);
   console.log();
 
   vfs.src(['**/*', '!node_modules/**/*'], {cwd: cwd, cwdbase: true, dot: true})
@@ -53,8 +53,7 @@ Success! Created ${projectName} at ${dest}.
 
 Inside that directory, you can run several commands:
   * npm start: Starts the development server.
-  * npm run build: Bundles the app into dist for production.
-  * npm test: Run test.
+  * npm run dist: Bundles the app into dist for production.
 
 We suggest that you begin by typing:
   cd ${dest}
