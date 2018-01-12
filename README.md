@@ -1,5 +1,5 @@
 # wci-cli
-![](http://7xr3o7.com1.z0.glb.clouddn.com/wci_logo.png)
+![](http://7xr3o7.com1.z0.glb.clouddn.com/wci_logo.png =100x100)
 
 ### wci-cli
 ***
