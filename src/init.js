@@ -19,7 +19,7 @@ function success(message) {
 }
 
 function init({ pure, install }) {
-  const type = pure ? 'pure' : 'antd';
+  const type = pure ? 'pure-app' : 'antd-app';
   const cwd = join(__dirname, '../boilerplates', type);
   const dest = process.cwd();
   const projectName = basename(dest);

@@ -17,7 +17,7 @@ const {
   DEV_PORT,
   DEV_API,
   PROJECT_DEV_SRC,
-  APP_INDEX,
+  PROJECT_INDEX,
   PROJECT_PATH,
   ISESLINT,
   VERSION,
@@ -37,7 +37,7 @@ config.devtool = 'cheap-module-eval-source-map';
 config.entry = [
   'webpack/hot/dev-server',
   `webpack-dev-server/client?http://${PROJECT_HOSTNAME}:${DEV_PORT}`,
-  path.resolve(PROJECT_PATH, `${APP_INDEX}/`),
+  path.resolve(PROJECT_PATH, `${PROJECT_INDEX}/`),
 ];
 
 /**

@@ -16,7 +16,7 @@ const {
   PROJECT_DEV_SRC,
   PROJECT_PROD_SRC,
   PROD_API,
-  APP_INDEX,
+  PROJECT_INDEX,
   VENDOR,
   VERSION,
 } = configuration;
@@ -33,7 +33,7 @@ config.devtool = 'cheap-module-source-map';
  * @type {Object}
  */
 config.entry = {
-  app: path.resolve(PROJECT_PATH, `${APP_INDEX}/`),
+  app: path.resolve(PROJECT_PATH, `${PROJECT_INDEX}/`),
   vendor: VENDOR,
 };
 
