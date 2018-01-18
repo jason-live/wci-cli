@@ -18,8 +18,8 @@ function success(message) {
   console.error(chalk.green(message));
 }
 
-function init({ pure, install }) {
-  const type = pure ? 'pure-app' : 'antd-app';
+function init({ m, install }) {
+  const type = m ? 'antdM-app' : 'antd-app';
   const cwd = join(__dirname, '../boilerplates', type);
   const dest = process.cwd();
   const projectName = basename(dest);

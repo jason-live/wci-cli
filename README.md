@@ -19,12 +19,12 @@ Create app with new directory.
 
 ```
 $ wci new myapp
-$ wci new myapp --pure
+$ wci new myapp --m
 $ wci new myapp --no-install
 ```
 
 #### options
-* --pure -- Create an app without antd.
+* --m -- Create an app inclued antd mobile.
 * --no-install -- Disable npm install after files created
 
 ## Introduction
@@ -32,18 +32,17 @@ $ wci new myapp --no-install
 
 ```
 .
-├── app                    # Source directory 
-    ├── assets             # Store images, icons, ... 
+├── app                    # Source directory
+    ├── assets             # Store images, icons, ...
     ├── scripts            # Store js
-    ├── styles             # Store global less 
-    ├── utils              # Utils 
-    ├── index.js           # Entrance to the file 
-    ├── index.tpl.html     # html template 
-├── build                  # Continuous integration 
-├── .babelrc               # babel config 
-├── .eslintrc              # Eslint config 
-├── .gitignore             # 
-├── package.json           # 
+    ├── styles             # Store global less
+    ├── utils              # Utils
+    ├── index.js           # Entrance to the file
+    ├── index.tpl.html     # html template
+├── build                  # Continuous integration
+├── .babelrc               # babel config
+├── .eslintrc              # Eslint config
+├── .gitignore             #
+├── package.json           #
 └── wci.json               # Setting config
 ```
-
