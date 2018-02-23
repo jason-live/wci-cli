@@ -12,8 +12,6 @@ let answer = {};
 
 program
   .usage('[options] appName')
-  .option('--m', 'Create an app inclued antd mobile.')
-  .option('--no-install', 'Disable npm install after files created')
   .parse(process.argv);
 
 if (!program.args[0]) {
