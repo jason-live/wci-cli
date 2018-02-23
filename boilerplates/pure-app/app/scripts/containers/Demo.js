@@ -23,7 +23,7 @@ class Demo extends Component {
   componentWillMount() {
     this.props.demo({
       title: 'Hello wci',
-      content: 'A Webpack Continuous integration for React、Ant Design',
+      content: 'A Webpack Continuous integration for React',
     });
   }
 

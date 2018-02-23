@@ -1,17 +1,17 @@
 {
-  "version": "1.0.0",
+  "name": "demo-wci-build",
+  "version": "1.0.2",
+  "cversion": "c020701",
   "description": "",
   "main": "index.js",
-  "keywords": [],
   "scripts": {
     "start": "wci-build run start",
     "test": "wci-build run test",
     "dist": "wci-build run dist"
   },
-  "author": "",
+  "author": "jasonlive",
   "license": "ISC",
   "dependencies": {
-    "antd": "^3.0.3",
     "axios": "^0.17.1",
     "blueimp-md5": "^2.10.0",
     "classnames": "^2.2.5",

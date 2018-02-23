@@ -1,7 +1,7 @@
 {
   "index": "app/index.js",
   "hostname": "127.0.0.1",
-  "name": "微医美",
+  "name": "wci-pure-app",
   "libs": [
     "react",
     "react-dom",
@@ -16,27 +16,18 @@
   "dev": {
     "port": 8031,
     "src": "app",
-    "api": "http://192.168.0.240:8082",
-    "module": {
-      "retrieve":"/report",
-      "report": "/reporting-service"
-    },
+    "api": "",
+    "module": {},
     "is_eslint": false
   },
   "test": {
-    "module": {
-      "retrieve":"/arch-cloud-report-service",
-      "report": "/reporting-service"
-    },
-    "api": "http://gateway-test.jswym.com:48083"
+    "module": {},
+    "api": ""
   },
   "prod": {
     "port": 9031,
     "src": "dist",
-    "module": {
-      "retrieve":"/arch-cloud-report-service",
-      "report": "/reporting-service"
-    },
-    "api": "https://apigateway.jswym.com"
+    "module": {},
+    "api": ""
   }
 }

@@ -16,8 +16,6 @@ program
   .option('--no-install', 'Disable npm install after files created')
   .parse(process.argv);
 
-console.log(program.args);
-
 if (!program.args[0]) {
   program.help();
 } else {
