@@ -5,13 +5,18 @@ const mkdirpSync = require('fs-extra').mkdirpSync;
 const join = require('path').join;
 const existsSync = require('fs').existsSync;
 const chalk = require('chalk');
+const inquirer = require('inquirer');
 const error = chalk.red;
+
+let answer = {};
 
 program
   .usage('[options] appName')
   .option('--m', 'Create an app inclued antd mobile.')
   .option('--no-install', 'Disable npm install after files created')
   .parse(process.argv);
+
+console.log(program.args);
 
 if (!program.args[0]) {
   program.help();
@@ -23,5 +28,44 @@ if (!program.args[0]) {
   }
   mkdirpSync(dest);
   process.chdir(dest);
-  require('../lib/init')(program);
+  inquirer.prompt([
+    {
+      type: 'confirm',
+      name: 'isAntd',
+      message: 'Need to introduce antd?',
+      default: true
+    }
+  ]).then((answers) => {
+    answer = Object.assign({}, answer, {
+      ...answers,
+    });
+    if (answers.isAntd) {
+      return inquirer.prompt([
+        {
+          type: 'list',
+          name: 'type',
+          choices: ['antd-app','antd-mobile-app'],
+          message: 'Select the antd type you want to install.',
+          default: 0
+        }
+      ]);
+    }
+  }).then((answers) => {
+    answer = Object.assign({}, answer, {
+      ...answers,
+    });
+    return inquirer.prompt([
+      {
+        type: 'confirm',
+        name: 'install',
+        message: 'Does the auto install dependency package?',
+        default: true
+      }
+    ]);
+  }).then((answers) => {
+    answer = Object.assign({}, answer, {
+      ...answers,
+    });
+    require('../lib/init')(answer);
+  });
 }

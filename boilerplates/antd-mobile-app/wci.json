@@ -1,7 +1,7 @@
 {
   "index": "app/index.js",
   "hostname": "127.0.0.1",
-  "name": "微医美",
+  "name": "wci-app",
   "libs": [
     "react",
     "react-dom",

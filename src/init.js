@@ -18,9 +18,9 @@ function success(message) {
   console.error(chalk.green(message));
 }
 
-function init({ m, install }) {
-  const type = m ? 'antdM-app' : 'antd-app';
-  const cwd = join(__dirname, '../boilerplates', type);
+function init({isAntd, type, install}) {
+  const appName = type ? 'pure-app' : type;
+  const cwd = join(__dirname, '../boilerplates', appName);
   const dest = process.cwd();
   const projectName = basename(dest);
 
@@ -49,17 +49,18 @@ function init({ m, install }) {
 
   function printSuccess() {
     success(`
-Success! Created ${projectName} at ${dest}.
+      Success! Created ${projectName} at ${dest}.
 
-Inside that directory, you can run several commands:
-  * npm start: Starts the development server.
-  * npm run dist: Bundles the app into dist for production.
+      Inside that directory, you can run several commands:
+        * npm start: Starts the development server.
+        * npm run dist: Bundles the app into dist for production.
 
-We suggest that you begin by typing:
-  cd ${dest}
-  npm start
+      We suggest that you begin by typing:
+        cd ${dest}
+        npm start
 
-Happy hacking!`);
+      Happy hacking!`
+    );
   }
 }
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Button } from 'antd';
 import { demo } from '../actions/demo.action';
 import logo from '../../assets/images/wci_logo.png';
 import styles from './demo.less';
@@ -32,7 +31,6 @@ class Demo extends Component {
     return (
       <div className={styles.demo}>
         <img className={styles.logo} src={logo} alt="logo" />
-        <Button type="primary">Primary</Button>
         <div className={styles.name}>
           {this.props.demoData.title}
         </div>
