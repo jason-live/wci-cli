@@ -27,9 +27,9 @@ npm install -g wci-cli
 $ wci new myapp
 ```
 键入上述命令后，根据命令行提示进行项目生成：
-1 Need to introduce antd? // 是否需要安装antd？
-2 Select the antd type you want to install. // 选择一个antd类型（条件一为yes时）
-3 Does the auto install dependency package? // 是否需要初始化依赖包？
+1. Need to introduce antd? // 是否需要安装antd？
+2. Select the antd type you want to install. // 选择一个antd类型（条件一为yes时）
+3. Does the auto install dependency package? // 是否需要初始化依赖包？
 
 ![](http://7xr3o7.com1.z0.glb.clouddn.com/QQ20180223-180335@2x.png)
 
