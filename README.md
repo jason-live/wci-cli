@@ -36,18 +36,27 @@ $ wci new myapp
 ## 项目结构
 
 ```
-.
-├── app                    # Source directory
-    ├── assets             # Store images, icons, ...
-    ├── scripts            # Store js
-    ├── styles             # Store global less
-    ├── utils              # Utils
-    ├── index.js           # Entrance to the file
-    ├── index.tpl.html     # html template
-├── build                  # Continuous integration
-├── .babelrc               # babel config
-├── .eslintrc              # Eslint config
-├── .gitignore             #
-├── package.json           #
-└── wci.json               # Setting config
+myapp
+├── app // 项目业务代码
+│   ├── assets // 静态文件目录（图片、字体等）
+│   ├── script // js代码目录
+│   │   ├── actions // redux action目录
+│   │   ├── componets // react 无状态组件目录
+│   │   ├── containers // react 业务代码
+│   │   ├── reducers // redux reducer目录
+│   │   ├── util // 工具包目录
+│   │   │   ├── theme.js // antd自定义样式文件
+│   │   ├── Home.js // 首页
+│   │   ├── home.less // 首页样式
+│   ├── styles // 全局样式目录
+│   ├── index.js // 项目入口文件
+│   ├── index.tpl.html // 项目html模版
+├── node_modules // 依赖包目录
+├── .babelrc // babel配置文件
+├── .eslintrc // eslint代码校验配置文件
+├── .gitignore
+├── package.json
+├── README.md
+├── wci.json // wci项目配置文件（主要配置一些开发、测试、生产环境的信息）
+└── webpack.js // webpack自定义配置文件
 ```
