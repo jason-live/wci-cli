@@ -1,7 +1,6 @@
 {
-  "name": "demo-wci-build",
   "version": "1.0.2",
-  "cversion": "c020701",
+  "cversion": "c1001",
   "description": "",
   "main": "index.js",
   "scripts": {

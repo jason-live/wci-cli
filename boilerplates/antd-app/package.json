@@ -1,5 +1,6 @@
 {
   "version": "1.0.0",
+  "cversion": "c1001",
   "description": "",
   "main": "index.js",
   "keywords": [],
