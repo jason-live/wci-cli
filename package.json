@@ -1,6 +1,6 @@
 {
   "name": "wci-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "wci-cli",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/jason-live/wci-cli.git"
   },
   "author": "jasonlive",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "wci": "./bin/wci"
   },
