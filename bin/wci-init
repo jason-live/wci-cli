@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+
+const inquirer = require('inquirer');
+
+let answer = {};
+
+inquirer.prompt([
+  {
+    type: 'confirm',
+    name: 'isAntd',
+    message: 'Need to introduce antd?',
+    default: true
+  }
+]).then((answers) => {
+  answer = Object.assign({}, answer, {
+    ...answers,
+  });
+  if (answers.isAntd) {
+    return inquirer.prompt([
+      {
+        type: 'list',
+        name: 'type',
+        choices: ['antd-app','antd-mobile-app'],
+        message: 'Select the antd type you want to install.',
+        default: 0
+      }
+    ]);
+  }
+}).then((answers) => {
+  answer = Object.assign({}, answer, {
+    ...answers,
+  });
+  return inquirer.prompt([
+    {
+      type: 'confirm',
+      name: 'install',
+      message: 'Does the auto install dependency package?',
+      default: true
+    }
+  ]);
+}).then((answers) => {
+  answer = Object.assign({}, answer, {
+    ...answers,
+  });
+  require('../lib/init')(answer);
+});
