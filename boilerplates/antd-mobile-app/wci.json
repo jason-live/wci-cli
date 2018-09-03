@@ -1,45 +1,68 @@
 {
+  "version": "2.0.1",
+  "tversion": "070901",
   "index": "app/index.js",
   "hostname": "127.0.0.1",
-  "name": "wci-antd-mobile-app",
-  "libs": [
-    "react",
-    "react-dom",
-    "axios",
-    "classnames",
-    "prop-types",
-    "react-redux",
-    "react-router-dom",
-    "redux",
-    "redux-thunk"
-  ],
+  "name": "wci-app",
+  "libs": {
+    "antd": [
+      "antd"
+    ],
+    "vender": [
+      "react",
+      "react-dom",
+      "axios",
+      "classnames",
+      "prop-types",
+      "react-redux",
+      "react-router-dom",
+      "redux",
+      "redux-thunk",
+      "moment"
+    ]
+  },
   "dev": {
-    "port": 8031,
+    "port": 8032,
     "src": "app",
+    "output": "dev",
     "is_eslint": false,
     "modules": {
-      "module1": {
-        "host": "",
+      "api": {
+        "host": "http://fly.fuliaoyi.com",
+        "path": ""
+      },
+      "redirect": {
+        "host": "http://127.0.0.1:8032",
         "path": ""
       }
     }
   },
-  "test": {
-    "port": 9031,
-    "src": "test",
+  "release": {
+    "port": 9032,
+    "src": "release",
+    "output": "release",
     "modules": {
-      "module1": {
-        "host": "",
+      "api": {
+        "host": "http://tfly.fuliaoyi.com",
+        "path": ""
+      },
+      "redirect": {
+        "host": "https://bss-fly.fuliaoyi.com",
         "path": ""
       }
     }
   },
   "prod": {
-    "port": 9031,
+    "port": 9033,
     "src": "dist",
+    "output": "dist",
     "modules": {
-      "module1": {
-        "host": "",
+      "api": {
+        "host": "https://erpapi.fuliaoyi.com:9051",
+        "path": ""
+      },
+      "redirect": {
+        "host": "https://bss.fuliaoyi.com",
         "path": ""
       }
     }
