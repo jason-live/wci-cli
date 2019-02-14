@@ -1,5 +1,7 @@
 /node_modules
 /dist
+/dev
+/release
 .vscode
 .idea
 .DS_Store
