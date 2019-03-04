@@ -1,8 +1,10 @@
-const theme = require('./app/scripts/util/theme');
+/* eslint-disable import/no-dynamic-require */
+const projectDirectory = process.cwd();
+const theme = require(`${projectDirectory}/app/scripts/util/theme`);
 
 const rules = [{
   test: /\.less/,
-  packageName: 'node_modules/antd-mobile',
+  packageName: 'node_modules/antd',
   useDev: [
     {
       loader: 'style-loader',
@@ -14,6 +16,7 @@ const rules = [{
       loader: 'less-loader',
       options: {
         modifyVars: theme,
+        javascriptEnabled: true,
       },
     },
   ],
@@ -25,24 +28,9 @@ const rules = [{
       loader: 'less-loader',
       options: {
         modifyVars: theme,
+        javascriptEnabled: true,
       },
     },
-  ],
-}, {
-  test: /\.css/,
-  packageName: 'node_modules/normalize.css',
-  useDev: [
-    {
-      loader: 'style-loader',
-    },
-    {
-      loader: 'css-loader',
-    }
-  ],
-  useProd: [
-    {
-      loader: 'css-loader',
-    }
   ],
 }];
 
