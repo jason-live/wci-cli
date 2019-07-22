@@ -6,11 +6,11 @@ const wciRelease = () => {
   // 请求接口
   config.apis = {
     api: {
-      host: 'http://tfly.fuliaoyi.com',
+      host: 'api',
       path: '',
     },
     redirect: {
-      host: 'https://bss-fly.fuliaoyi.com',
+      host: 'hostname',
       path: '',
     },
   };

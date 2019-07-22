@@ -6,11 +6,11 @@ const wciProd = () => {
   // 请求接口
   config.apis = {
     api: {
-      host: 'https://erpapi.fuliaoyi.com:9051',
+      host: 'api',
       path: '',
     },
     redirect: {
-      host: 'https://bss.fuliaoyi.com',
+      host: 'hostname',
       path: '',
     },
   };

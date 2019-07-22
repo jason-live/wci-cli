@@ -1,26 +1,32 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.0",
   "cversion": "c1001",
   "description": "",
   "main": "index.js",
+  "keywords": [],
   "scripts": {
     "start": "wci-build run start",
     "test": "wci-build run test",
-    "dist": "wci-build run dist"
+    "dist": "wci-build run dist",
+    "dev": "wci-build run dev",
+    "release": "wci-build run release",
+    "lint:js": "eslint --ext .js app/"
   },
-  "author": "jasonlive",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.17.1",
     "blueimp-md5": "^2.10.0",
     "classnames": "^2.2.5",
+    "dva-core": "^1.4.0",
+    "dva-loading": "^3.0.12",
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-logger": "^3.0.6"
   },
   "devDependencies": {
     "wci-build": "^1.4.2"

@@ -1,5 +1,5 @@
 const antdTheme = {
-  'brand-primary': 'red',
+  'primary-color': '#1e90ff',
 };
 
 

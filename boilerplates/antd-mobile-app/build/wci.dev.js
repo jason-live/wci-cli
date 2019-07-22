@@ -8,11 +8,11 @@ const wciDev = () => {
   // 请求接口
   config.apis = {
     api: {
-      host: 'http://fly.fuliaoyi.com',
+      host: 'api',
       path: '',
     },
     redirect: {
-      host: 'http://127.0.0.1:8032',
+      host: 'hostname',
       path: '',
     },
   };

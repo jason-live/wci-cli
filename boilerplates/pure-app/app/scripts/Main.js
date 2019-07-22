@@ -1,12 +1,23 @@
 import React from 'react';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
+import {
+  Router, Route, Switch, Redirect,
+} from 'react-router-dom';
 import { Provider } from 'react-redux';
-import createBrowserHistory from 'history/createBrowserHistory';
-import Demo from './containers/Demo';
-import configureStore from './reducers/index.reducer';
+import moment from 'moment';
+import 'moment/locale/zh-cn';
+import { createBrowserHistory } from 'history';
+import dva from './util/dva';
+import models from './model';
+import SignIn from './containers/passport/SignIn';
 import '../styles/global.less';
 
-const store = configureStore();
+moment.locale('zh-cn');
+
+const dvaApp = dva.createApp({
+  initialState: {},
+  models,
+});
+const store = dvaApp.getStore();
 const history = createBrowserHistory();
 
 function Main() {
@@ -18,11 +29,11 @@ function Main() {
             exact
             path="/"
             render={() => (
-              <Redirect to="demo" />
+              <Redirect to="sign-in" />
             )}
           />
-          <Route path="/demo" component={Demo} />
-          <Route component={Demo} />
+          <Route path="/sign-in" component={SignIn} />
+          <Route component={SignIn} />
         </Switch>
       </Router>
     </Provider>

@@ -8,7 +8,7 @@
     [
       "import", [
         {
-           "libraryName": "antd-mobile",
+           "libraryName": "antd",
            "libraryDirectory": "es",
            "style": true
         }

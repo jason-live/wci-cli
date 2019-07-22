@@ -10,24 +10,17 @@ const wciDefault = () => {
   // 入口文件
   config.index = `${config.src}/index.js`;
   // 项目名称
-  config.name = 'name';
-  // 打包结构
-  config.libs = {
-    antd: [
-      'antd',
-    ],
-    vender: [
-      'react',
-      'react-dom',
-      'axios',
-      'classnames',
-      'prop-types',
-      'react-redux',
-      'react-router-dom',
-      'redux',
-      'redux-thunk',
-      'moment',
-    ],
+  config.name = '☁️☁️';
+  // 请求接口
+  config.apis = {
+    api: {
+      host: 'api',
+      path: '',
+    },
+    redirect: {
+      host: 'hostname',
+      path: '',
+    },
   };
   return {
     ...config,
